@@ -6,7 +6,7 @@ var handleSecondData=function handleSecond(){
 eventEmitter.on('handleSecond',handleSecondData);
 eventEmitter.on('handleData',function(){
     console.log('开始了');
-    eventEmitter.emit('handleSecond');    
+    eventEmitter.emit('handleSecond');
 });
 eventEmitter.emit('handleData');
 console.log('结束了');

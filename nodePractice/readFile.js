@@ -1,7 +1,7 @@
 var fs=require('fs');
-fs.readFile('fileUsedToRead.txt',function(err,data){
+fs.readFile('fileUsedToRead1.txt',function(err,data){
     if(err){
-        console.log('错误:'+err)
+        console.log('错误:'+err.stack)
         return;
     }
     console.log(data);
@@ -14,4 +14,5 @@ console.log('不用等文件读取完');
 创建专门存储二进制数据的缓存区/
 object
 你好啊，帅哥！
+err.stack异常堆栈信息 alert(err.stack)和console.log(err)一样
  */
