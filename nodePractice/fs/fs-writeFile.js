@@ -1,6 +1,6 @@
 var fs=require('fs');
 console.log('准备写入文件');
-fs.writeFile('write.txt','我是通过fs.writeFile写入文件的内容',function(err){
+fs.writeFile('write.txt','我是追加的内容',{'flag':'a+'},function(err){
     if(err){
         return console.error(err);
     }
