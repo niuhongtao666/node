@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>index-ejs</title>
+</head>
+<body>
+    <div class="static">静态资源路径可以配置多个，一个里面找不到，可以找另一个</div>
+    <%-include('../public/head.ejs')%>
+    <h4>这是首页ejs模版</h4>
+    <%-content%>
+    <%=publicString%>
+</body>
+</html>

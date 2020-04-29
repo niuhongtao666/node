@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+</head>
+<body>
+    <h4>修改order</h4>
+    <form action="/edit" method="post">
+        <input type="hidden" name="id" id="" value="{{@orderInfo._id}}"><br>
+        trade_no<input type="text" name="trade_no" id="" value="{{orderInfo.trade_no}}"><br>
+        all_price<input type="text" name="all_price" id="" value="{{orderInfo.all_price}}"><br>
+        all_null<input type="text" name="all_null" id="" value="{{orderInfo.all_null}}"><br>
+        <button type="submit">修改</button>
+    </form>
+</body>
+</html>

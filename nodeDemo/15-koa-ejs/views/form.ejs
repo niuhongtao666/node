@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-ejs</title>
+</head>
+<body>
+    <%-include('../public/head.ejs')%>
+    <form action="/doLogin" method="post">
+            用户名：<input type="text" name='userName'><br/>
+            密码<input type="text" name='passsword'>
+            <button type="submit">提交</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>index-Document</title>
+</head>
+<body>
+    <h1>首页</h1>
+    <a href="/add">增加order</a>
+    <table border="1" cellpadding="0" cellspacing="0" >
+        <thead>
+            <tr>
+                <th>trade_no</th>
+                <th>all_price</th>
+                <th>all_null</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{each list}}
+            <tr>
+                <td>{{$value.trade_no}}</td>
+                <td>{{$value.all_price}}</td>
+                <td>{{$value.all_null}}</td>
+                <td>{{@$value._id}}</td>
+                <td>
+                    <a href="/edit?id={{@$value._id}}">修改</a>
+                    <a href="/delete?id={{@$value._id}}">删除</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>

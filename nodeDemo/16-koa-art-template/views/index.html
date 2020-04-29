@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>art-template</title>
+</head>
+<body>
+    <div>art-template</div>
+    <div>
+        <%=list.id%>
+    </div>
+    <div>
+        <%-list.h%>
+    </div>
+    <div>
+        {{@list.h}}
+    </div>
+    <ul>
+        {{each list.arr}}
+        <li>{{$index}}--{{$value}}</li>
+        {{/each}}
+    </ul>
+    <%-include('./component/footer.html')%>
+    {{include './component/footer.html'}}
+</body>
+</html>
