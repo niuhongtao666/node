@@ -9,7 +9,7 @@ router.get('/',(ctx)=>{
 })
 router.use('/admin',admin.routes())//http://localhost:3000/user/index可以写多级目录
 app.use(router.routes()).use(router.allowedMethods());
-app.listen(3004)
+app.listen(3005)
 
 
 
